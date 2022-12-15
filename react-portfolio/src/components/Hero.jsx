@@ -7,6 +7,16 @@ import { navSocial } from '../constants';
 import * as Unicons from '@iconscout/react-unicons';
 
 const Hero = () => {
+  function scrollUp() {
+    const scrollUp = document.getElementById('scroll-up');
+    if (this.scrollY >= 560) {
+      scrollUp.classList.add('show-scroll');
+    } else {
+      scrollUp.classList.remove('show-scroll');
+    }
+  }
+  window.addEventListener('scroll', scrollUp);
+
   return (
     <div className={`${styles.marginY}`}>
       {/* ----- Social Icons ----- */}
@@ -53,7 +63,7 @@ const Hero = () => {
 
       {/* ----- Hero Scroll Down Button ----- */}
 
-      <div className='mt-[-4.5rem] mr-[6rem]'>
+      <div className='mt-[-4.5rem] mr-[6rem] duration-[.2s] hover:translate-y-1'>
         <a
           href='#skills'
           className='ml-auto flex w-fit animate-bounceDown items-center'
@@ -63,6 +73,16 @@ const Hero = () => {
           <Unicons.UilArrowDown className='h-[20px] w-[20px] dark:fill-white' />
         </a>
       </div>
+
+      {/* ----- Scroll Up Button ----- */}
+
+      <a
+        href='#home'
+        id='scroll-up'
+        className='fixed bottom-[-20%] right-[5rem] z-[2] animate-bounceUp rounded-[.4rem] bg-primary py-[.3rem] px-[.5rem] opacity-[.8] duration-[.2s] hover:bottom-[5.5rem] hover:bg-secondary'
+      >
+        <Unicons.UilArrowUp className='h-[30px] w-[30px] fill-white' />
+      </a>
     </div>
   );
 };

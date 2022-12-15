@@ -40,7 +40,7 @@ const Navbar = () => {
     <div
       className={`${
         scroll ? 'shadow-nav dark:shadow-navDark' : 'shadow-none'
-      }  fixed bottom-0 z-[1] w-full bg-backgroundLightNav px-6 dark:bg-backgroundDarkNav sm:top-0 sm:bottom-auto sm:px-[20rem]`}
+      }  fixed bottom-0 z-[2] w-full bg-backgroundLightNav px-6 dark:bg-backgroundDarkNav sm:top-0 sm:bottom-auto sm:px-[20rem]`}
     >
       <nav
         className={`${styles.boxWidth} my-0 mx-auto flex justify-end py-5 sm:px-10`}

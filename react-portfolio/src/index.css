@@ -38,3 +38,22 @@
     transform: translateY(0);
   }
 }
+
+.wavyContainer::before {
+  content: '';
+  position: absolute;
+  background: url('./assets/Icons/wavy.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: -100px;
+  top: 0px;
+  right: -2500px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.show-scroll {
+  bottom: 5rem;
+}

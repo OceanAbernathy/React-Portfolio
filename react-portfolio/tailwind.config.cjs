@@ -21,6 +21,9 @@ module.exports = {
         poppins: ['Poppins', 'sans-serif'],
         mono: ['Roboto Mono', 'monospace'],
       },
+      background: {
+        wavy: "url('./src/assets/Icons/wavy.svg')",
+      },
       backgroundImage: {
         'hero-pattern': "url('./src/assets/texture.png')",
         'hero-pattern-inverted': "url('./src/assets/texture_inverted.png')",
@@ -41,9 +44,20 @@ module.exports = {
           '90%': { transform: 'translateY(0)' },
           '100%': { transform: 'translateY(0)' },
         },
+        bounceUp: {
+          '0%': { transform: 'translateY(0)' },
+          '25%': { transform: 'translateY(0)' },
+          '30%': { transform: 'translateY(-8px)' },
+          '35%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(0)' },
+          '70%': { transform: 'translateY(0)' },
+          '90%': { transform: 'translateY(0)' },
+          '100%': { transform: 'translateY(0)' },
+        },
       },
       animation: {
         bounceDown: 'bounceDown 4s ease infinite',
+        bounceUp: 'bounceUp 4s ease infinite',
       },
     },
     screens: {
