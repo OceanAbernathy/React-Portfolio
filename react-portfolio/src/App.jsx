@@ -1,4 +1,4 @@
-import { Navbar, Hero, Portfolio, Contact, Footer, Splash } from './components';
+import { Navbar, Hero, Portfolio, Contact, Footer } from './components';
 
 import styles from './style';
 
@@ -41,7 +41,6 @@ const App = () => (
       >
         <div className={`${styles.boxWidth}`}>
           <Footer />
-          {/* <Splash /> */}
         </div>
       </div>
     </div>
