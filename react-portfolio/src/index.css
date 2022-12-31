@@ -10,33 +10,25 @@
   font-family: 'Poppins', sans-serif;
   scrollbar-width: thin;
   letter-spacing: 0.05rem;
+  margin: 0;
+  padding: 0;
 }
 
 .sidebar {
-  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slideTop 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-@-webkit-keyframes slide-top {
-  0% {
-    -webkit-transform: translateY(250px);
-    transform: translateY(250px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
-
-@keyframes slide-top {
-  0% {
-    -webkit-transform: translateY(250px);
-    transform: translateY(250px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
+.slide {
+  display: grid;
+  justify-content: stretch;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 50%;
+  gap: 1rem;
+  grid-area: i;
+  grid-template-areas:
+    'img'
+    'data';
+  transition: opacity ease-in-out 0.4s;
 }
 
 .wavyContainer::before {
@@ -45,15 +37,105 @@
   background: url('./assets/Icons/wavy.svg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-x: -100px;
-  top: 0px;
-  right: -2500px;
-  bottom: 0px;
-  left: 0px;
+  top: 50px;
+  right: 0;
+  bottom: 0;
+  left: -100px;
   opacity: 0.8;
   z-index: -1;
 }
 
-.show-scroll {
-  bottom: 5rem;
+.navLink::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  border-bottom: 2px solid hsl(183, 30%, 60%);
+}
+
+.navLink:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.footerLink::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  border-bottom: 2px solid white;
+}
+
+.footerLink:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.blink::before,
+.blink::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.blink::before {
+  background: hsl(44, 85%, 97%);
+  animation: typewriter 2.5s steps(24) 1.2s forwards;
+}
+
+.blink::after {
+  width: 0.25rem;
+  animation: typewriter 2.5s steps(24) 1.2s forwards,
+    blink 1s steps(24) infinite;
+}
+
+@media screen and (min-width: 768px) {
+  .slide {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'img data';
+  }
+}
+
+@keyframes blink {
+  0% {
+    background: black;
+  }
+  50% {
+    background: black;
+  }
+  60% {
+    background: transparent;
+  }
+  100% {
+    background: transparent;
+  }
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes slideTop {
+  0% {
+    transform: translateY(250px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }

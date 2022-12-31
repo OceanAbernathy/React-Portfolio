@@ -1,6 +1,6 @@
 export default Blob = () => (
   <svg
-    className='m-[2rem] w-[320px]'
+    className='m-[2rem] w-[235px] sm:m-[2rem] sm:w-[320px]'
     viewBox='0 0 130 130'
     xmlns='http://www.w3.org/2000/svg'
   >

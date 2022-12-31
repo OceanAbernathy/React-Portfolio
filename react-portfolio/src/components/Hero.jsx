@@ -1,37 +1,29 @@
-import styles from '../style';
+import { useState, useEffect } from 'react';
 
+import Social from './Social/Social';
 import Blob from './Blob';
-
-import { navSocial } from '../constants';
 
 import * as Unicons from '@iconscout/react-unicons';
 
+import styles from '../style';
+
 const Hero = () => {
-  function scrollUp() {
-    const scrollUp = document.getElementById('scroll-up');
-    if (this.scrollY >= 560) {
-      scrollUp.classList.add('show-scroll');
-    } else {
-      scrollUp.classList.remove('show-scroll');
-    }
-  }
-  window.addEventListener('scroll', scrollUp);
+  const [scrolled, setScrolled] = useState(false);
+
+  // ----- Scroll Up Button Handler -----
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      setScrolled(window.scrollY >= 560);
+    });
+  }, []);
 
   return (
-    <div className={`${styles.marginY}`}>
+    <div className={`${styles.marginHero} select-none`}>
       {/* ----- Social Icons ----- */}
 
       <div className={`relative flex justify-center`}>
-        <div className='absolute left-0 bottom-1/2 grid translate-y-1/2 gap-y-[2rem]'>
-          {navSocial.map((nav, index) => (
-            <a key={nav.id} href={`#${nav.href}`} target='_blank'>
-              <img
-                src={nav.icon}
-                alt={nav.title}
-                className='h-[35px] w-[35px] fill-white'
-              />
-            </a>
-          ))}
+        <div className='absolute left-0 bottom-1/2 translate-y-1/2'>
+          <Social />
         </div>
 
         {/* ----- Hero Image ----- */}
@@ -39,12 +31,12 @@ const Hero = () => {
         <Blob />
       </div>
 
-      {/* ----- Hero Text ----- */}
+      {/* ----- Hero Heading Text ----- */}
 
-      <div className='flex flex-col text-center'>
-        <p className='font-mono text-[2.5rem] dark:text-white'>
-          Hello, my name is <span className='home__title__span'>Ocean</span>.
-        </p>
+      <div className='flex flex-col text-start sm:text-center'>
+        <h1 className='blink relative mx-auto w-max font-mono text-[1.5rem] dark:text-white sm:text-[2.5rem]'>
+          Hello, my name is <span className='font-mono'>Ocean</span>.
+        </h1>
         <h2 className='py-5 text-[2rem] font-medium text-secondary'>
           Front-End Web Developer
         </h2>
@@ -65,7 +57,7 @@ const Hero = () => {
 
       <div className='mt-[-4.5rem] mr-[6rem] duration-[.2s] hover:translate-y-1'>
         <a
-          href='#skills'
+          href='#portfolio'
           className='ml-auto flex w-fit animate-bounceDown items-center'
         >
           <Unicons.UilMouseAlt className='h-[20px] w-[20px] dark:fill-white' />
@@ -78,8 +70,9 @@ const Hero = () => {
 
       <a
         href='#home'
-        id='scroll-up'
-        className='fixed bottom-[-20%] right-[5rem] z-[2] animate-bounceUp rounded-[.4rem] bg-primary py-[.3rem] px-[.5rem] opacity-[.8] duration-[.2s] hover:bottom-[5.5rem] hover:bg-secondary'
+        className={`${
+          scrolled ? 'bottom-[5rem]' : 'bottom-[-20%]'
+        } fixed right-[5rem] z-[2] animate-bounceUp rounded-[.4rem] bg-primary py-[.3rem] px-[.5rem] opacity-[.8] duration-[.2s] hover:bottom-[5.5rem] hover:bg-secondary`}
       >
         <Unicons.UilArrowUp className='h-[30px] w-[30px] fill-white' />
       </a>

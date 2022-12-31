@@ -1,4 +1,3 @@
-export { default as File } from './file-alt.svg';
 export { default as FileDownload } from './file-download.svg';
 export { default as Home } from './home.svg';
 export { default as Message } from './message.svg';

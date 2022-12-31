@@ -1,48 +1,49 @@
-import styles, { layout } from './style';
+import { Navbar, Hero, Portfolio, Contact, Footer, Splash } from './components';
 
-import { Navbar, Hero, Skills } from './components';
+import styles from './style';
 
 const App = () => (
-  <div className='z-[-1] w-full overflow-hidden bg-backgroundLight bg-hero-pattern dark:bg-backgroundDark dark:bg-hero-pattern-inverted'>
-    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+  <div className='z-[-1] w-full overflow-hidden bg-backgroundLight bg-hero-pattern px-[1.75rem] dark:bg-backgroundDark dark:bg-hero-pattern-inverted sm:px-0'>
+    <div className={`${styles.flexCenter}`}>
       <Navbar />
     </div>
 
     <div
       id='home'
-      className={`${styles.flexCenter} ${layout.section} mb-[6rem]`}
+      className={`${styles.flexCenter} pt-[5rem] ${styles.section} mb-[6rem]`}
     >
       <div className={`${styles.boxWidth}`}>
         <Hero />
       </div>
     </div>
 
-    <div
-      className={`${styles.sectionMargin} wavyContainer relative z-[1] h-full w-full`}
-    >
-      <div id='skills' className={`${styles.flexCenter} ${layout.section}`}>
-        <div className={`${styles.boxWidth}`}>
-          <Skills />
-        </div>
-      </div>
-
-      {/* <div className={`${styles.flexStart} ${layout.section}`}>
+    <div className='wavyContainer relative z-[1] h-full w-full pt-[8rem] sm:pt-[14rem]'>
+      <div
+        id='portfolio'
+        className={`${styles.flexStart} ${styles.section} pt-[6rem]`}
+      >
         <div className={`${styles.boxWidth}`}>
           <Portfolio />
         </div>
       </div>
 
-      <div className={`${styles.flexStart} ${layout.section}`}>
+      <div
+        id='contact'
+        className={`${styles.flexStart} pt-[6rem] ${styles.section}`}
+      >
         <div className={`${styles.boxWidth}`}>
           <Contact />
         </div>
       </div>
 
-      <div className={`${styles.flexStart} ${layout.section}`}>
+      <div
+        className={`${styles.flexStart} ${styles.sectionMargin} flex-col md:flex-row`}
+      >
         <div className={`${styles.boxWidth}`}>
           <Footer />
+          {/* <Splash /> */}
         </div>
-      </div> */}
+      </div>
     </div>
   </div>
 );

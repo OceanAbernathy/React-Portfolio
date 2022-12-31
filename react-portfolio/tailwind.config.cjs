@@ -6,16 +6,18 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#7AB5B8',
-        secondary: '#B87A7A',
-        primaryLight: '#ACD0D2',
-        secondaryLight: '#D2ACAC',
-        primaryDark: '#478285',
+        primary: 'hsl(183, 30%, 60%)',
+        secondary: 'hsl(0, 30%, 60%)',
+        primaryLight: 'hsl(183, 30%, 75%)',
+        secondaryLight: 'hsl(0, 30%, 75%)',
+        primaryDark: 'hsl(183, 30%, 40%)',
         backgroundLight: 'hsl(44, 85%, 97%)',
         backgroundLightNav: 'hsl(44, 85%, 97%)',
         backgroundDark: 'hsl(0, 0%, 0%)',
         backgroundDarkNav: 'hsl(0, 0%, 0%)',
-        darkAccent: '#737373',
+        lightAccent: 'hsl(183, 20%, 90%)',
+        darkAccent: 'hsl(0, 0%, 45%)',
+        darkerAccent: 'hsl(183, 10%, 20%)',
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
@@ -54,10 +56,15 @@ module.exports = {
           '90%': { transform: 'translateY(0)' },
           '100%': { transform: 'translateY(0)' },
         },
+        grow: {
+          '0%, 100%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(3deg)' },
+        },
       },
       animation: {
         bounceDown: 'bounceDown 4s ease infinite',
         bounceUp: 'bounceUp 4s ease infinite',
+        grow: 'grow 4s ease forward',
       },
     },
     screens: {
