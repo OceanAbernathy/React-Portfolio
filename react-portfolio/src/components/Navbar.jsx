@@ -40,7 +40,7 @@ const Navbar = () => {
     <div
       className={`${
         scroll ? 'shadow-nav dark:shadow-navDark' : 'shadow-none'
-      } fixed bottom-0 z-[2] w-full select-none bg-backgroundLightNav px-6 dark:bg-backgroundDarkNav sm:top-0 sm:bottom-auto sm:px-[20rem]`}
+      } fixed bottom-0 z-[2] w-full select-none bg-backgroundLightNav px-6 dark:bg-backgroundDarkNav sm:top-0 sm:bottom-auto md:px-[6rem] lg:px-[10rem] xl:px-[20rem]`}
     >
       <nav
         className={`${styles.boxWidth} my-0 mx-auto flex justify-end py-4 sm:px-[3rem] sm:py-3`}
@@ -50,7 +50,7 @@ const Navbar = () => {
         <a
           href='#home'
           alt='logo'
-          className='mr-auto flex text-[1.5rem] font-semibold text-primary hover:text-secondary dark:text-primaryDark dark:hover:text-secondary sm:text-[2.5rem]'
+          className='mr-auto flex font-semibold text-primary hover:text-secondary dark:text-primaryDark dark:hover:text-secondary sm:text-[2.5rem] md:text-[2.2rem] xl:text-[2.5rem]'
         >
           Ocean
         </a>
@@ -61,8 +61,10 @@ const Navbar = () => {
           {navLinks.map((nav, index) => (
             <li
               key={nav.id}
-              className={`relative cursor-pointer text-[1.25rem] sm:text-[1.4rem] ${
-                index === navLinks.length - 1 ? 'mr-0' : 'sm:mr-8 md:mr-14 '
+              className={`relative cursor-pointer text-[1.25rem] xl:text-[1.4rem] ${
+                index === navLinks.length - 1
+                  ? 'mr-0'
+                  : 'sm:mr-[1.5rem] md:mr-[2.75rem] xl:mr-[3.5rem]'
               } font-medium text-secondary hover:text-primary dark:hover:text-primaryDark`}
             >
               <a

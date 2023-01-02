@@ -1,7 +1,7 @@
 const styles = {
   section: 'flex md:flex-row flex-col py-[3rem]',
 
-  boxWidth: 'xl:max-w-[1350px] w-full',
+  boxWidth: 'md:max-w-[1200px] xl:max-w-[1350px] w-full',
 
   heading: 'font-semibold text-[3rem]',
   subHeading: 'text-[1.25rem]',
@@ -9,7 +9,7 @@ const styles = {
   flexCenter: 'flex justify-center items-center',
   flexStart: 'flex justify-center items-start',
 
-  marginHero: 'my-[4rem]',
+  marginHero: 'my-[3rem]',
   sectionMargin: 'mt-[5rem]',
 
   button:

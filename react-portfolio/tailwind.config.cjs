@@ -56,15 +56,10 @@ module.exports = {
           '90%': { transform: 'translateY(0)' },
           '100%': { transform: 'translateY(0)' },
         },
-        grow: {
-          '0%, 100%': { transform: 'rotate(-3deg)' },
-          '50%': { transform: 'rotate(3deg)' },
-        },
       },
       animation: {
         bounceDown: 'bounceDown 4s ease infinite',
         bounceUp: 'bounceUp 4s ease infinite',
-        grow: 'grow 4s ease forward',
       },
     },
     screens: {

@@ -1,50 +1,70 @@
-import { Navbar, Hero, Portfolio, Contact, Footer } from './components';
+import { useState, useEffect } from 'react';
+
+import { Splash, Navbar, Hero, Portfolio, Contact, Footer } from './components';
 
 import styles from './style';
 
-const App = () => (
-  <div className='z-[-1] w-full overflow-hidden bg-backgroundLight bg-hero-pattern px-[1.75rem] dark:bg-backgroundDark dark:bg-hero-pattern-inverted sm:px-0'>
-    <div className={`${styles.flexCenter}`}>
-      <Navbar />
-    </div>
+const App = () => {
+  const [scrolled, setScrolled] = useState(false);
 
-    <div
-      id='home'
-      className={`${styles.flexCenter} pt-[5rem] ${styles.section} mb-[6rem]`}
-    >
-      <div className={`${styles.boxWidth}`}>
-        <Hero />
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      setScrolled(window.scrollY >= 450);
+    });
+  }, []);
+
+  return (
+    <div className=' z-[-1] w-full overflow-hidden bg-backgroundLight bg-hero-pattern px-[1.75rem] dark:bg-backgroundDark dark:bg-hero-pattern-inverted sm:px-0'>
+      <div className='splash fixed flex h-[100vh] w-full place-items-center justify-center bg-black'>
+        <Splash />
       </div>
-    </div>
 
-    <div className='wavyContainer relative z-[1] h-full w-full pt-[8rem] sm:pt-[14rem]'>
+      <div className={`${styles.flexCenter}`}>
+        <Navbar />
+      </div>
+
       <div
-        id='portfolio'
-        className={`${styles.flexStart} ${styles.section} pt-[6rem]`}
+        id='home'
+        className={`${styles.flexCenter} pt-[5rem] ${styles.section} mb-[6rem]`}
       >
         <div className={`${styles.boxWidth}`}>
-          <Portfolio />
+          <Hero />
         </div>
       </div>
 
       <div
-        id='contact'
-        className={`${styles.flexStart} pt-[6rem] ${styles.section}`}
+        className={`${
+          scrolled ? '' : 'translate-y-[250px]'
+        } wavyContainer relative z-[1] h-full w-full pt-[8rem] duration-[.6s] sm:pt-[14rem]`}
       >
-        <div className={`${styles.boxWidth}`}>
-          <Contact />
+        <div
+          id='portfolio'
+          className={`${styles.flexStart} ${styles.section} pt-[6rem]`}
+        >
+          <div className={`${styles.boxWidth}`}>
+            <Portfolio />
+          </div>
         </div>
-      </div>
 
-      <div
-        className={`${styles.flexStart} ${styles.sectionMargin} flex-col md:flex-row`}
-      >
-        <div className={`${styles.boxWidth}`}>
-          <Footer />
+        <div
+          id='contact'
+          className={`${styles.flexStart} pt-[6rem] ${styles.section}`}
+        >
+          <div className={`${styles.boxWidth}`}>
+            <Contact />
+          </div>
+        </div>
+
+        <div
+          className={`${styles.flexStart} ${styles.sectionMargin} flex-col md:flex-row`}
+        >
+          <div className={`${styles.boxWidth}`}>
+            <Footer />
+          </div>
         </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default App;
