@@ -156,7 +156,7 @@
 
 @keyframes fadeOut {
   to {
-    z-index: 0;
+    z-index: -1;
   }
 }
 
