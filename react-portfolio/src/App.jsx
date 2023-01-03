@@ -14,12 +14,12 @@ const App = () => {
   }, []);
 
   return (
-    <div className=' z-[-1] w-full overflow-hidden bg-backgroundLight bg-hero-pattern px-[1.75rem] dark:bg-backgroundDark dark:bg-hero-pattern-inverted sm:px-0'>
+    <div className=' z-[-1] w-full overflow-hidden bg-backgroundLight bg-hero-pattern dark:bg-backgroundDark dark:bg-hero-pattern-inverted'>
       <div className='splash fixed flex h-[100vh] w-full place-items-center justify-center bg-black'>
         <Splash />
       </div>
 
-      <div className={`${styles.flexCenter}`}>
+      {/* <div className={`${styles.flexCenter}`}>
         <Navbar />
       </div>
 
@@ -62,7 +62,7 @@ const App = () => {
             <Footer />
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
