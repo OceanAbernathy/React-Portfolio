@@ -35,12 +35,13 @@ const Hero = () => {
 
       <div className='flex flex-col text-start sm:text-center'>
         <h1 className='text-[1.5rem] dark:text-white sm:text-[3rem]'>
-          Hello, my name is Ocean.
+          Hello, my name is{' '}
+          <span className='font-medium text-primary'>Ocean</span>.
         </h1>
         <h2 className='flex place-items-center justify-center pt-5 pb-6 text-[2rem] font-medium text-secondary'>
-          <span className='text-black dark:text-white'>{`{`}</span>
+          <span className='px-2 text-black dark:text-white'>{`{`}</span>
           Front-End Web Developer
-          <span className='text-black dark:text-white'>{`}`}</span>
+          <span className='px-2 text-black dark:text-white'>{`}`}</span>
         </h2>
         <p className='text-[1.15rem] dark:text-white'>
           Passionate about creating a seamless user experience using clean and

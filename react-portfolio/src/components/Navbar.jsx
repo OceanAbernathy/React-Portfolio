@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 
 import { navLinks } from '../constants';
 
+import Logo from './Logo';
+
 import * as Unicons from '@iconscout/react-unicons';
 
 import styles from '../style';
@@ -47,12 +49,8 @@ const Navbar = () => {
       >
         {/* ----- Nav Logo ----- */}
 
-        <a
-          href='#home'
-          alt='logo'
-          className='mr-auto flex font-semibold text-primary hover:text-secondary dark:text-primaryDark dark:hover:text-secondary sm:text-[2.5rem] md:text-[2.2rem] xl:text-[2.5rem]'
-        >
-          Ocean
+        <a href='#home' alt='logo' className='mr-auto h-[100px] w-[100px]'>
+          <Logo />
         </a>
 
         {/* ----- Desktop Nav ----- */}
