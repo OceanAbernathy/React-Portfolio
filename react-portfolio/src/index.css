@@ -66,9 +66,8 @@
   content: '';
   position: absolute;
   background: url('./assets/Icons/wavy.svg');
-  background-repeat: no-repeat;
   background-size: cover;
-  top: 0;
+  top: -100px;
   right: -100px;
   bottom: -100px;
   left: -100px;
@@ -205,7 +204,7 @@
 
 @keyframes slideTop {
   0% {
-    transform: translateY(-250px);
+    transform: translateY(250px);
   }
   100% {
     transform: translateY(0);

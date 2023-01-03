@@ -13,7 +13,7 @@ const Hero = () => {
   // ----- Scroll Up Button Handler -----
   useEffect(() => {
     window.addEventListener('scroll', () => {
-      setScrolled(window.scrollY >= 450);
+      setScrolled(window.scrollY >= 250);
     });
   }, []);
 

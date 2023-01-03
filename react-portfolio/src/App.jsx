@@ -9,7 +9,7 @@ const App = () => {
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
-      setScrolled(window.scrollY >= 450);
+      setScrolled(window.scrollY >= 250);
     });
   }, []);
 
@@ -25,7 +25,7 @@ const App = () => {
 
       <div
         id='home'
-        className={`${styles.flexCenter} pt-[5rem] ${styles.section} mb-[6rem]`}
+        className={`${styles.flexCenter} pt-[5rem] ${styles.section} mb-[5rem]`}
       >
         <div className={`${styles.boxWidth}`}>
           <Hero />
@@ -34,8 +34,8 @@ const App = () => {
 
       <div
         className={`${
-          scrolled ? '' : 'translate-y-[250px]'
-        } wavyContainer relative z-[1] h-full w-full pt-[8rem] duration-[.6s] sm:pt-[14rem]`}
+          scrolled ? '' : 'translate-y-[150px]'
+        } wavyContainer relative z-[1] h-full w-full pt-[8rem] duration-[.6s] sm:pt-[5rem]`}
       >
         <div
           id='portfolio'
