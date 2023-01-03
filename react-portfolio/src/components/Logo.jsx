@@ -1,8 +1,8 @@
 const Logo = () => (
   <svg
     width='100'
-    height='100'
-    viewBox='-10 0 530 300'
+    height='90'
+    viewBox='-10 0 530 400'
     xmlns='http://www.w3.org/2000/svg'
     fill='none'
     className='stroke-primary stroke-[15px] hover:fill-secondary hover:stroke-secondary'

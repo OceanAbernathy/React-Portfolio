@@ -49,7 +49,7 @@ const Navbar = () => {
       >
         {/* ----- Nav Logo ----- */}
 
-        <a href='#home' alt='logo' className='mr-auto h-[100px] w-[100px]'>
+        <a href='#home' alt='logo' className='mr-auto h-[80px] w-[80px]'>
           <Logo />
         </a>
 
