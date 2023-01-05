@@ -5,7 +5,7 @@ const Logo = () => (
     viewBox='-10 0 520 320'
     xmlns='http://www.w3.org/2000/svg'
     fill='none'
-    className='stroke-primary stroke-[15px] hover:fill-secondary hover:stroke-secondary'
+    className='stroke-primary stroke-[18px] hover:fill-secondary hover:stroke-secondary'
   >
     <path
       className='navLogo'
