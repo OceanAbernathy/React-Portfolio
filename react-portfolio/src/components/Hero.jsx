@@ -78,9 +78,9 @@ const Hero = () => {
         href='#home'
         className={`${
           scrolled
-            ? 'bottom-[5rem] delay-[.5s] duration-[.7s]'
+            ? 'bottom-[7rem] duration-[.2s] md:bottom-[5rem]'
             : 'bottom-[-20%]'
-        } fixed right-[5rem] z-[2] hidden animate-bounceUp rounded-[.4rem] bg-primary py-[.3rem] px-[.5rem] opacity-[.8] duration-[.2s] hover:bottom-[5.5rem] hover:bg-secondary lg:block`}
+        } fixed right-[1rem] z-[2] animate-bounceUp rounded-[.4rem] bg-primary py-[.3rem] px-[.5rem] opacity-[.8] hover:bottom-[7.5rem] hover:bg-secondary md:right-[5rem] md:hover:bottom-[5.5rem]`}
       >
         <Unicons.UilArrowUp className='h-[30px] w-[30px] fill-white' />
       </a>
