@@ -4,7 +4,7 @@ import styles from '../style';
 
 const Portfolio = () => (
   <div className='select-none'>
-    {/* ----- Portfolio Heading Text ----- */}
+    {/* ----- Portfolio Heading ----- */}
 
     <h2 className={`text-center ${styles.heading}`}>Portfolio</h2>
     <p className={`mb-[2rem] text-center ${styles.subHeading}`}>

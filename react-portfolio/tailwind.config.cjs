@@ -22,7 +22,6 @@ module.exports = {
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
-        mono: ['Roboto Mono', 'monospace'],
       },
       background: {
         wavy: "url('./src/assets/Icons/wavy.svg')",

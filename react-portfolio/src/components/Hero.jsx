@@ -31,7 +31,7 @@ const Hero = () => {
         <Blob />
       </div>
 
-      {/* ----- Hero Heading Text ----- */}
+      {/* ----- Hero Heading ----- */}
 
       <div className='flex flex-col px-[4rem] text-start xxs:px-[.5rem] ss:text-center sm:px-[3.5rem] lg:px-0'>
         <h1 className='text-[1.5rem] dark:text-white xxs:text-[2rem] sm:text-[2.5rem] md:text-[3rem]'>
