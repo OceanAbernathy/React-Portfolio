@@ -1,6 +1,6 @@
 const GitHub = () => (
   <svg
-    className='fill-[#2e3838] hover:fill-[#478285] dark:fill-black dark:hover:fill-primary'
+    className='fill-black hover:fill-[#478285] dark:fill-black dark:hover:fill-primary'
     xmlns='http://www.w3.org/2000/svg'
     data-name='Layer 1'
     viewBox='0 0 24 24'

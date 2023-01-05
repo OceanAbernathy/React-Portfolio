@@ -18,7 +18,6 @@ module.exports = {
         backgroundDarkNav: 'hsl(0, 0%, 0%)',
         lightAccent: 'hsl(183, 20%, 90%)',
         darkAccent: 'hsl(0, 0%, 45%)',
-        darkerAccent: 'hsl(183, 10%, 20%)',
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],

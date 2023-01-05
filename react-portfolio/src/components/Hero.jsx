@@ -33,7 +33,7 @@ const Hero = () => {
 
       {/* ----- Hero Heading ----- */}
 
-      <div className='flex flex-col px-[4rem] text-start xxs:px-[.5rem] ss:text-center sm:px-[3.5rem] lg:px-0'>
+      <div className='flex flex-col px-[4rem] text-start xxs:px-[.5rem] ss:text-center sm:px-[3.5rem] lg:px-[10rem] xl:px-0'>
         <h1 className='text-[1.5rem] dark:text-white xxs:text-[2rem] sm:text-[2.5rem] md:text-[3rem]'>
           Hello, my name is{' '}
           <span className='font-semibold text-primary underline decoration-[3px] underline-offset-[.5rem] ss:font-medium ss:no-underline'>
@@ -61,7 +61,7 @@ const Hero = () => {
 
       {/* ----- Hero Scroll Down Button ----- */}
 
-      <div className='mt-[-4.5rem] mr-[6rem] duration-[.2s] hover:translate-y-1'>
+      <div className='absolute right-[3rem] bottom-[3rem] duration-[.2s] hover:translate-y-1 xl:right-[5rem] xl:bottom-[5rem]'>
         <a
           href='#portfolio'
           className='ml-auto hidden w-fit animate-bounceDown items-center lg:flex'
