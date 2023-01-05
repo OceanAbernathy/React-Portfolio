@@ -27,8 +27,8 @@ module.exports = {
         wavy: "url('./src/assets/Icons/wavy.svg')",
       },
       backgroundImage: {
-        'hero-pattern': "url('./src/assets/texture.png')",
-        'hero-pattern-inverted': "url('./src/assets/texture_inverted.png')",
+        'hero-pattern': "url('/texture.png')",
+        'hero-pattern-inverted': "url('/texture_inverted.png')",
       },
       boxShadow: {
         nav: '0 -4px 6px -1px rgb(0 0 0 / 0.1), 0 4px 4px -2px rgb(0 0 0 / 0.1)',
