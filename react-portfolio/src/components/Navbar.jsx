@@ -70,7 +70,7 @@ const Navbar = () => {
               } font-medium text-secondary hover:text-primary dark:hover:text-primaryDark`}
             >
               <a
-                className='navLink'
+                className='navLink dark:hover:before:border-primaryDark'
                 href={`${nav.id}`}
                 target={`${nav.target}`}
               >

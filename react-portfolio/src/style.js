@@ -4,7 +4,7 @@ const styles = {
   boxWidth: 'md:max-w-[1200px] xl:max-w-[1350px] w-full',
 
   heading: 'font-semibold text-[2.5rem] ss:text-[3rem]',
-  subHeading: 'text-[1.1rem] ss:text-[1.25rem]',
+  subHeading: 'text-[1.1rem] ss:text-[1.25rem] dark:text-white',
 
   flexCenter: 'flex justify-center items-center',
   flexStart: 'flex justify-center items-start',

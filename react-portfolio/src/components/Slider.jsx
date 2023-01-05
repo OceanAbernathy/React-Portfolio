@@ -68,10 +68,10 @@ const Slider = () => {
           {/* ----- Slide Text ----- */}
 
           <div className='self-center'>
-            <h3 className='relative col-span-2 row-span-1 mb-[2rem] ml-[1rem] w-max text-[1.25rem] font-semibold text-darkerAccent underline decoration-[.2rem] underline-offset-8 sm:text-[1.5rem] md:ml-[2rem]'>
+            <h3 className='relative col-span-2 row-span-1 mb-[2rem] ml-[1rem] w-max text-[1.25rem] font-semibold text-darkerAccent underline decoration-[.2rem] underline-offset-8 dark:text-black sm:text-[1.5rem] md:ml-[2rem]'>
               {obj.title}
             </h3>
-            <p className='col-span-2 row-span-1 mx-[1rem] mb-[2rem] text-[1.05rem] font-medium text-darkerAccent sm:text-[1.2rem] md:m-[2rem]'>
+            <p className='col-span-2 row-span-1 mx-[1rem] mb-[2rem] text-[1.05rem] font-medium text-darkerAccent dark:text-lightAccent sm:text-[1.2rem] md:m-[2rem]'>
               {obj.about}
             </p>
 
