@@ -33,15 +33,18 @@ const Hero = () => {
 
       {/* ----- Hero Heading Text ----- */}
 
-      <div className='flex flex-col text-start sm:text-center'>
-        <h1 className='text-[1.5rem] dark:text-white sm:text-[3rem]'>
+      <div className='flex flex-col px-[4rem] text-start xxs:px-[.5rem] ss:text-center sm:px-[3.5rem] lg:px-0'>
+        <h1 className='text-[1.5rem] dark:text-white xxs:text-[2rem] sm:text-[2.5rem] md:text-[3rem]'>
           Hello, my name is{' '}
-          <span className='font-medium text-primary'>Ocean</span>.
+          <span className='font-semibold text-primary underline decoration-[3px] underline-offset-[.5rem] ss:font-medium ss:no-underline'>
+            Ocean
+          </span>
+          .
         </h1>
-        <h2 className='flex place-items-center justify-center pt-5 pb-6 text-[2rem] font-medium text-secondary'>
-          <span className='px-2 text-black dark:text-white'>{`{`}</span>
+        <h2 className='flex justify-start pt-4 pb-4 text-[1.2rem] font-medium text-secondary ss:justify-center sm:text-[1.5rem] md:pt-[.8rem] md:pb-[1.3rem] md:text-[2rem]'>
+          <span className='pr-1 text-black dark:text-white sm:pr-2'>{`{`}</span>
           Front-End Web Developer
-          <span className='px-2 text-black dark:text-white'>{`}`}</span>
+          <span className='pl-1 text-black dark:text-white sm:pl-2'>{`}`}</span>
         </h2>
         <p className='text-[1.15rem] dark:text-white'>
           Passionate about creating a seamless user experience using clean and
@@ -61,7 +64,7 @@ const Hero = () => {
       <div className='mt-[-4.5rem] mr-[6rem] duration-[.2s] hover:translate-y-1'>
         <a
           href='#portfolio'
-          className='ml-auto flex w-fit animate-bounceDown items-center'
+          className='ml-auto hidden w-fit animate-bounceDown items-center lg:flex'
         >
           <Unicons.UilMouseAlt className='h-[20px] w-[20px] dark:fill-white' />
           <span className='mx-3 text-[1rem] dark:text-white'>Scroll down</span>
@@ -77,7 +80,7 @@ const Hero = () => {
           scrolled
             ? 'bottom-[5rem] delay-[.5s] duration-[.7s]'
             : 'bottom-[-20%]'
-        } fixed right-[5rem] z-[2] animate-bounceUp rounded-[.4rem] bg-primary py-[.3rem] px-[.5rem] opacity-[.8] duration-[.2s] hover:bottom-[5.5rem] hover:bg-secondary`}
+        } fixed right-[5rem] z-[2] hidden animate-bounceUp rounded-[.4rem] bg-primary py-[.3rem] px-[.5rem] opacity-[.8] duration-[.2s] hover:bottom-[5.5rem] hover:bg-secondary lg:block`}
       >
         <Unicons.UilArrowUp className='h-[30px] w-[30px] fill-white' />
       </a>

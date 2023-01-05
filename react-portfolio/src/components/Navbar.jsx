@@ -49,7 +49,11 @@ const Navbar = () => {
       >
         {/* ----- Nav Logo ----- */}
 
-        <a href='#home' alt='logo' className='mr-auto h-[80px] w-[80px]'>
+        <a
+          href='#home'
+          alt='logo'
+          className='mr-auto flex place-items-center xxs:h-[60px] xxs:w-[60px] sm:h-[80px] sm:w-[80px]'
+        >
           <Logo />
         </a>
 
@@ -111,7 +115,11 @@ const Navbar = () => {
                   key={nav.id}
                   className='cursor-pointer font-poppins text-[16px] font-normal text-secondary'
                 >
-                  <a href={`#${nav.id}`} className='flex flex-col text-center'>
+                  <a
+                    className='flex flex-col text-center'
+                    href={`${nav.id}`}
+                    target={`${nav.target}`}
+                  >
                     <img
                       src={nav.icon}
                       alt={nav.title}

@@ -11,6 +11,7 @@ module.exports = {
         primaryLight: 'hsl(183, 30%, 75%)',
         secondaryLight: 'hsl(0, 30%, 75%)',
         primaryDark: 'hsl(183, 30%, 40%)',
+        secondaryDark: 'hsl(0, 30%, 40%)',
         backgroundLight: 'hsl(44, 85%, 97%)',
         backgroundLightNav: 'hsl(44, 85%, 97%)',
         backgroundDark: 'hsl(0, 0%, 0%)',
@@ -63,6 +64,7 @@ module.exports = {
       },
     },
     screens: {
+      xxs: '1px',
       xs: '480px',
       ss: '620px',
       sm: '768px',

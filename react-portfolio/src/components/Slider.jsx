@@ -43,7 +43,7 @@ const Slider = () => {
               : 'slide opacity-0'
           }
         >
-          <div className='relative m-[2rem] self-center rounded-2xl shadow-2xl'>
+          <div className='relative m-[1rem] self-center rounded-2xl shadow-2xl sm:m-[2rem]'>
             {/* ----- Slide Image ----- */}
 
             <img className='rounded-2xl' src={obj.img} alt='' />
@@ -68,16 +68,16 @@ const Slider = () => {
           {/* ----- Slide Text ----- */}
 
           <div className='self-center'>
-            <h3 className='relative col-span-2 row-span-1 mb-[2rem] ml-[2rem] w-max text-[1.5rem] font-semibold text-darkerAccent underline decoration-[.2rem] underline-offset-8'>
+            <h3 className='relative col-span-2 row-span-1 mb-[2rem] ml-[1rem] w-max text-[1.25rem] font-semibold text-darkerAccent underline decoration-[.2rem] underline-offset-8 sm:text-[1.5rem] md:ml-[2rem]'>
               {obj.title}
             </h3>
-            <p className='col-span-2 row-span-1 m-[2rem] text-[1.2rem] font-medium text-darkerAccent'>
+            <p className='col-span-2 row-span-1 mx-[1rem] mb-[2rem] text-[1.05rem] font-medium text-darkerAccent sm:text-[1.2rem] md:m-[2rem]'>
               {obj.about}
             </p>
 
             {/* ----- Slide Icons ----- */}
 
-            <div className='ml-[2rem]'>
+            <div className='ml-[1rem] md:ml-[2rem]'>
               <a
                 className='mr-[1.5rem] inline-block h-[35px] w-[35px]'
                 href={obj.git}

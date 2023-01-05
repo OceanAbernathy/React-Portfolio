@@ -19,13 +19,13 @@ const App = () => {
         <Splash />
       </div>
 
-      {/* <div className={`${styles.flexCenter}`}>
+      <div className={`${styles.flexCenter}`}>
         <Navbar />
       </div>
 
       <div
         id='home'
-        className={`${styles.flexCenter} pt-[5rem] ${styles.section} mb-[5rem]`}
+        className={`${styles.flexCenter} pt-[3rem] lg:pt-[5rem] ${styles.section} mb-[5rem] xxs:px-[2rem] ss:px-[4rem] sm:px-[4rem] lg:px-[5rem]`}
       >
         <div className={`${styles.boxWidth}`}>
           <Hero />
@@ -39,7 +39,7 @@ const App = () => {
       >
         <div
           id='portfolio'
-          className={`${styles.flexStart} ${styles.section} pt-[6rem]`}
+          className={`${styles.flexStart} mx-auto w-[80%] pb-[3rem] pt-[6rem]`}
         >
           <div className={`${styles.boxWidth}`}>
             <Portfolio />
@@ -48,7 +48,7 @@ const App = () => {
 
         <div
           id='contact'
-          className={`${styles.flexStart} pt-[6rem] ${styles.section}`}
+          className={`${styles.flexStart} pt-[8rem] ss:pt-[10rem] ${styles.section}`}
         >
           <div className={`${styles.boxWidth}`}>
             <Contact />
@@ -62,7 +62,7 @@ const App = () => {
             <Footer />
           </div>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };

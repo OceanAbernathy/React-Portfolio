@@ -6,7 +6,7 @@ export default function BtnSlider({ direction, moveSlide }) {
     return (
       <button
         onClick={moveSlide}
-        className='absolute top-[50%] left-[-3rem] mx-[.5rem] translate-y-[-50%] cursor-pointer duration-[.3s]'
+        className='absolute top-0 left-[-2rem] mx-0 mt-[50%] translate-y-[-50%] cursor-pointer duration-[.3s] sm:left-[-3rem] sm:top-[50%] sm:mx-[.5rem] sm:mt-0'
       >
         <ArrowLeft />
       </button>
@@ -15,7 +15,7 @@ export default function BtnSlider({ direction, moveSlide }) {
   return (
     <button
       onClick={moveSlide}
-      className='absolute top-[50%] right-[-3rem] mx-[.5rem] translate-y-[-50%] cursor-pointer duration-[.3s]'
+      className='absolute top-0 right-[-2rem] mx-0 mt-[50%] translate-y-[-50%] cursor-pointer duration-[.3s] sm:right-[-3rem] sm:top-[50%] sm:mx-[.5rem] sm:mt-0'
     >
       <ArrowRight />
     </button>

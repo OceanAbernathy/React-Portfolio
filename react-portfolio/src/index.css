@@ -5,6 +5,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ----- RESET ----- */
+
 * {
   scroll-behavior: smooth;
   font-family: 'Poppins', sans-serif;
@@ -13,6 +15,8 @@
   margin: 0;
   padding: 0;
 }
+
+/* ----- General Styling ----- */
 
 #logo {
   animation: fill 0.8s ease-in-out forwards 3.5s;
@@ -26,7 +30,7 @@
 #logo path:nth-child(2) {
   stroke-dasharray: 1044.737060546875;
   stroke-dashoffset: 1044.737060546875;
-  animation: line-anim 3.5s ease forwards 2s;
+  animation: line-anim 3.5s ease forwards 1.95s;
 }
 
 .splash {
@@ -69,7 +73,7 @@
   background-size: cover;
   top: -100px;
   right: -100px;
-  bottom: -100px;
+  bottom: 75px;
   left: -100px;
   opacity: 0.8;
   z-index: -1;
@@ -133,6 +137,23 @@
     blink 1s steps(24) infinite;
 }
 
+/* ----- Responsive Styling ------ */
+
+@media screen and (min-width: 768px) {
+  .wavyContainer::before {
+    bottom: -50px;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .wavyContainer::before {
+    top: -100px;
+    right: -100px;
+    bottom: -100px;
+    left: -100px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .slide {
     grid-template-columns: 1fr 1fr;
@@ -140,6 +161,8 @@
     grid-template-areas: 'img data';
   }
 }
+
+/* ----- Animations ------ */
 
 @keyframes line-anim {
   to {
