@@ -1,5 +1,5 @@
-import ArrowLeft from '../assets/Icons/ArrowLeft';
-import ArrowRight from '../assets/Icons/ArrowRight';
+import ArrowLeft from './Social/ArrowLeft';
+import ArrowRight from './Social/ArrowRight';
 
 export default function BtnSlider({ direction, moveSlide }) {
   if (direction === 'prev') {

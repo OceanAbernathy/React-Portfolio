@@ -1,7 +1,11 @@
+import styles from '../style';
+
 const Footer = () => {
   let currentYear = new Date().getFullYear();
   return (
-    <footer className='mx-auto w-[90%] select-none pb-[7rem] sm:py-[2rem] xl:w-full'>
+    <footer
+      className={`${styles.boxWidth} mx-auto w-[90%] select-none pb-[7rem] sm:py-[2rem] xl:w-full`}
+    >
       <div className='relative pb-[1rem] md:py-[2rem]'>
         <div className='grid gap-[1rem] ss:grid-cols-2 ss:gap-0'>
           {/* ----- Footer Header ----- */}

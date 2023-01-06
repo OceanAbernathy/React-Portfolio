@@ -15,21 +15,15 @@ const App = () => {
 
   return (
     <div className=' z-[-1] w-full overflow-hidden bg-backgroundLight bg-hero-pattern dark:bg-backgroundDark dark:bg-hero-pattern-inverted'>
-      <div className='splash fixed flex h-[100vh] w-full place-items-center justify-center bg-black'>
-        <Splash />
-      </div>
+      <Splash />
 
-      <div className={`${styles.flexCenter}`}>
-        <Navbar />
-      </div>
+      <Navbar />
 
       <div
         id='home'
         className={`${styles.flexCenter} pt-[3rem] lg:pt-[5rem] ${styles.section} mb-[5rem] xxs:px-[2rem] ss:px-[4rem] sm:px-[4rem] lg:px-[5rem]`}
       >
-        <div className={`${styles.boxWidth}`}>
-          <Hero />
-        </div>
+        <Hero />
       </div>
 
       <div
@@ -39,28 +33,22 @@ const App = () => {
       >
         <div
           id='portfolio'
-          className={`${styles.flexStart} mx-auto w-[80%] pb-[3rem] pt-[6rem]`}
+          className={`${styles.flexStart} ${styles.boxWidth} mx-auto w-[80%] pb-[3rem] pt-[6rem]`}
         >
-          <div className={`${styles.boxWidth}`}>
-            <Portfolio />
-          </div>
+          <Portfolio />
         </div>
 
         <div
           id='contact'
           className={`${styles.flexStart} pt-[8rem] ss:pt-[10rem] ${styles.section}`}
         >
-          <div className={`${styles.boxWidth}`}>
-            <Contact />
-          </div>
+          <Contact />
         </div>
 
         <div
           className={`${styles.flexStart} ${styles.sectionMargin} flex-col md:flex-row`}
         >
-          <div className={`${styles.boxWidth}`}>
-            <Footer />
-          </div>
+          <Footer />
         </div>
       </div>
     </div>

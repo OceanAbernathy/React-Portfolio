@@ -42,6 +42,8 @@ const Navbar = () => {
     <div
       className={`${
         scroll ? 'shadow-nav dark:shadow-navDark' : 'shadow-none'
+      } ${
+        styles.flexCenter
       } fixed bottom-0 z-[2] w-full select-none bg-backgroundLightNav px-6 dark:bg-backgroundDarkNav sm:top-0 sm:bottom-auto md:px-[6rem] lg:px-[10rem] xl:px-[20rem]`}
     >
       <nav

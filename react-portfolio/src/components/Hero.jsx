@@ -18,7 +18,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className={`${styles.marginHero} select-none`}>
+    <div className={`${styles.marginHero} ${styles.boxWidth}  select-none`}>
       {/* ----- Social Icons ----- */}
 
       <div className={`relative flex justify-center`}>
