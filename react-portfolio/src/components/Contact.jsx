@@ -116,7 +116,7 @@ const Contact = () => {
 
           {/* ----- Contact Send Button ----- */}
 
-          <div className={`${styles.button} group my-0 ml-0`}>
+          <div className={`${styles.buttonContact} group my-0 mr-auto ml-0`}>
             <input type='submit' className='m-0' value='Send Message' />
             <Unicons.UilMessage className='ml-[.55rem] h-[20px] w-[20px] duration-300 group-hover:translate-x-1' />
           </div>
