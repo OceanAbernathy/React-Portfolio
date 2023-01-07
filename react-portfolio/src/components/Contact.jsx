@@ -27,7 +27,9 @@ const Contact = () => {
   };
 
   return (
-    <div className={`${styles.boxWidth} ml-auto mr-auto`}>
+    <div
+      className={`${styles.boxWidth} mx-[0rem] w-[100%] lg:mx-[5rem] xl:mx-auto xl:w-[75%]`}
+    >
       {/* ----- Contact Heading ----- */}
 
       <h2 className={`select-none text-center ${styles.heading}`}>

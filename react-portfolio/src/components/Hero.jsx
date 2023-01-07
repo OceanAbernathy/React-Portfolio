@@ -18,10 +18,12 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className={`${styles.marginHero} ${styles.boxWidth}  select-none`}>
+    <div
+      className={`${styles.marginHero} ${styles.boxWidth} w-[100%] select-none lg:w-[85%] xl:w-[75%]`}
+    >
       {/* ----- Social Icons ----- */}
 
-      <div className={`relative flex justify-center`}>
+      <div className='relative flex justify-center'>
         <div className='absolute left-0 bottom-1/2 translate-y-1/2'>
           <Social />
         </div>
@@ -61,7 +63,7 @@ const Hero = () => {
 
       {/* ----- Hero Scroll Down Button ----- */}
 
-      <div className='absolute right-[3rem] bottom-[3rem] duration-[.2s] hover:translate-y-1 xl:right-[5rem] xl:bottom-[5rem]'>
+      <div className='absolute right-[3rem] bottom-[3rem] z-[2] duration-[.2s] hover:translate-y-1 xl:right-[5rem] xl:bottom-[5rem]'>
         <a
           href='#portfolio'
           className='ml-auto hidden w-fit animate-bounceDown items-center lg:flex'

@@ -14,7 +14,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className=' z-[-1] w-full overflow-hidden bg-backgroundLight bg-hero-pattern dark:bg-backgroundDark dark:bg-hero-pattern-inverted'>
+    <div className='z-[-1] w-full overflow-hidden bg-backgroundLight bg-hero-pattern dark:bg-backgroundDark dark:bg-hero-pattern-inverted'>
       <Splash />
 
       <Navbar />
@@ -27,13 +27,11 @@ const App = () => {
       </div>
 
       <div
-        className={`${
-          scrolled ? '' : 'translate-y-[150px]'
-        } wavyContainer relative z-[1] h-full w-full pt-[8rem] duration-[.6s] sm:pt-[5rem]`}
+        className={`wavyContainer relative z-[1] h-full w-full pt-[8rem] duration-[.6s] sm:pt-[5rem]`}
       >
         <div
           id='portfolio'
-          className={`${styles.flexStart} ${styles.boxWidth} mx-auto w-[80%] pb-[3rem] pt-[6rem]`}
+          className={`${styles.flexStart} ${styles.boxWidth} mx-auto w-[80%] pb-[3rem] pt-[8rem] lg:w-[65%]`}
         >
           <Portfolio />
         </div>

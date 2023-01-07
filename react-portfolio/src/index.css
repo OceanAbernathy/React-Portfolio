@@ -72,11 +72,11 @@
   background-size: cover;
   top: -100px;
   right: -100px;
-  bottom: 75px;
+  bottom: 0;
   left: -100px;
   opacity: 0.8;
   z-index: -1;
-  animation: wave 4.5s ease-in-out infinite;
+  /* animation: wave 4.5s ease-in-out infinite; */
 }
 
 .navLink::before {
@@ -115,43 +115,7 @@
   transform-origin: bottom left;
 }
 
-.blink::before,
-.blink::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.blink::before {
-  background: hsl(44, 85%, 97%);
-  animation: typewriter 2.5s steps(24) 1.2s forwards;
-}
-
-.blink::after {
-  width: 0.25rem;
-  animation: typewriter 2.5s steps(24) 1.2s forwards,
-    blink 1s steps(24) infinite;
-}
-
 /* ----- Responsive Styling ------ */
-
-@media screen and (min-width: 768px) {
-  .wavyContainer::before {
-    bottom: -50px;
-  }
-}
-
-@media screen and (min-width: 1700px) {
-  .wavyContainer::before {
-    top: -100px;
-    right: -100px;
-    bottom: -100px;
-    left: -100px;
-  }
-}
 
 @media screen and (min-width: 768px) {
   .slide {
@@ -193,36 +157,17 @@
   }
 }
 
-@keyframes wave {
+/* @keyframes wave {
   0%,
   100% {
     transform: rotate(-0.6deg);
+    bottom: -50px;
   }
   50% {
     transform: rotate(0.6deg);
+    bottom: -50px;
   }
-}
-
-@keyframes blink {
-  0% {
-    background: black;
-  }
-  50% {
-    background: black;
-  }
-  60% {
-    background: transparent;
-  }
-  100% {
-    background: transparent;
-  }
-}
-
-@keyframes typewriter {
-  to {
-    left: 100%;
-  }
-}
+} */
 
 @keyframes slideTop {
   0% {

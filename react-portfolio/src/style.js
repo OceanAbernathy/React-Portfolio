@@ -1,7 +1,7 @@
 const styles = {
   section: 'flex md:flex-row flex-col py-[3rem]',
 
-  boxWidth: 'md:max-w-[1200px] xl:max-w-[1350px] w-full',
+  boxWidth: 'max-w-[1700px]',
 
   heading: 'font-semibold text-[2.5rem] ss:text-[3rem]',
   subHeading: 'text-[1.1rem] ss:text-[1.25rem] dark:text-white',
