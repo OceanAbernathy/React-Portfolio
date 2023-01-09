@@ -22,13 +22,13 @@
 }
 
 #logo path:nth-child(1) {
-  stroke-dasharray: 1663.6695556640625;
-  stroke-dashoffset: 1663.6695556640625;
+  stroke-dasharray: 1641.4661865234375;
+  stroke-dashoffset: 1641.4661865234375;
   animation: line-anim 3.5s ease-in forwards 1s;
 }
 #logo path:nth-child(2) {
-  stroke-dasharray: 1044.737060546875;
-  stroke-dashoffset: 1044.737060546875;
+  stroke-dasharray: 1069.3909912109375;
+  stroke-dashoffset: 1069.3909912109375;
   animation: line-anim 3.5s ease forwards 1.95s;
 }
 
@@ -56,7 +56,7 @@
   display: grid;
   justify-content: stretch;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 50%;
+  grid-template-rows: nfr 50%;
   gap: 1rem;
   grid-area: i;
   grid-template-areas:

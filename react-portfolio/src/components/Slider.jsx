@@ -78,22 +78,32 @@ const Slider = () => {
             {/* ----- Slide Icons ----- */}
 
             <div className='ml-[1rem] md:ml-[2rem]'>
-              <a
-                className='mr-[1.5rem] inline-block h-[35px] w-[35px]'
-                href={obj.git}
-                target='_blank'
-                rel='noreferrer'
-              >
-                <GitHub />
-              </a>
-              <a
-                className='inline-block h-[35px] w-[35px]'
-                href={obj.url}
-                target='_blank'
-                rel='noreferrer'
-              >
-                <Visit />
-              </a>
+              <div className='flex items-center pb-[.5rem]'>
+                <a
+                  className='h-[full] w-[full] fill-black hover:fill-primaryDark hover:text-primaryDark dark:fill-black dark:hover:fill-primary dark:hover:text-primary'
+                  href={obj.git}
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <GitHub />
+                  <p className='ml-[.75rem] inline text-[.85rem] font-semibold tracking-[.1rem]'>
+                    View the code
+                  </p>
+                </a>
+              </div>
+              <div className='flex items-center'>
+                <a
+                  className='h-[full] w-[full] fill-black hover:fill-primaryDark hover:text-primaryDark dark:fill-black dark:hover:fill-primary dark:hover:text-primary'
+                  href={obj.url}
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <Visit />
+                  <p className='ml-[.75rem] inline text-[.85rem] font-semibold tracking-[.1rem]'>
+                    See it live
+                  </p>
+                </a>
+              </div>
             </div>
           </div>
         </div>
