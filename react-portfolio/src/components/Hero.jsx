@@ -55,7 +55,11 @@ const Hero = () => {
 
         {/* ----- Hero Contact Button ----- */}
 
-        <a href='#contact' className={`${styles.buttonHero} group`}>
+        <a
+          className={`${styles.buttonHero} group`}
+          href='#contact'
+          title='Contact Me'
+        >
           Contact Me{' '}
           <Unicons.UilMessage className='ml-[.55rem] h-[20px] w-[20px] duration-300 group-hover:translate-x-1' />
         </a>
@@ -65,8 +69,9 @@ const Hero = () => {
 
       <div className='absolute right-[3rem] bottom-[3rem] z-[2] duration-[.2s] hover:translate-y-1 xl:right-[5rem] xl:bottom-[5rem]'>
         <a
-          href='#portfolio'
           className='ml-auto hidden w-fit animate-bounceDown items-center lg:flex'
+          href='#portfolio'
+          title='Scroll Down'
         >
           <Unicons.UilMouseAlt className='h-[20px] w-[20px] dark:fill-white' />
           <span className='mx-3 text-[1rem] dark:text-white'>Scroll down</span>
@@ -77,12 +82,13 @@ const Hero = () => {
       {/* ----- Scroll Up Button ----- */}
 
       <a
-        href='#home'
         className={`${
           scrolled
             ? 'bottom-[7rem] duration-[.2s] md:bottom-[5rem]'
             : 'bottom-[-20%]'
         } fixed right-[1rem] z-[2] animate-bounceUp rounded-[.4rem] bg-primary py-[.3rem] px-[.5rem] opacity-[.8] hover:bottom-[7.5rem] hover:bg-secondary md:right-[5rem] md:hover:bottom-[5.5rem]`}
+        href='#home'
+        title='Scroll Up'
       >
         <Unicons.UilArrowUp className='h-[30px] w-[30px] fill-white' />
       </a>

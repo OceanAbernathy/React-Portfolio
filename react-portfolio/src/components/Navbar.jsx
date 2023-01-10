@@ -52,9 +52,10 @@ const Navbar = () => {
         {/* ----- Nav Logo ----- */}
 
         <a
+          className='mr-auto flex place-items-center xxs:h-[60px] xxs:w-[60px] sm:h-[80px] sm:w-[80px]'
           href='#home'
           alt='logo'
-          className='mr-auto flex place-items-center xxs:h-[60px] xxs:w-[60px] sm:h-[80px] sm:w-[80px]'
+          title='Logo'
         >
           <Logo />
         </a>
@@ -75,6 +76,7 @@ const Navbar = () => {
                 className='navLink dark:hover:before:border-primaryDark'
                 href={`${nav.id}`}
                 target={`${nav.target}`}
+                title={`${nav.title}`}
               >
                 {nav.title}
               </a>
@@ -87,6 +89,7 @@ const Navbar = () => {
         <div
           className='mr-5 ml-0 flex cursor-pointer items-center sm:mr-0 sm:ml-10'
           onClick={() => toggleDarkMode()}
+          title='Theme Toggle'
         >
           {darkMode ? (
             <Unicons.UilSun

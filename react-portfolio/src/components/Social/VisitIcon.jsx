@@ -1,6 +1,6 @@
 const Visit = () => (
   <svg
-    className='inline h-[35px] w-[35px]'
+    className='inline h-[30px] w-[30px]'
     xmlns='http://www.w3.org/2000/svg'
     viewBox='0 0 24 24'
   >

@@ -71,7 +71,7 @@ const Slider = () => {
             <h3 className='relative col-span-2 row-span-1 mb-[2rem] ml-[1rem] w-max text-[1.25rem] font-semibold text-black underline decoration-[.2rem] underline-offset-8 dark:text-black sm:text-[1.5rem] md:ml-[2rem]'>
               {obj.title}
             </h3>
-            <p className='col-span-2 row-span-1 mx-[1rem] mb-[2rem] text-[1.05rem] font-medium text-black dark:text-lightAccent sm:text-[1.2rem] md:m-[2rem]'>
+            <p className='col-span-2 row-span-1 mx-[1rem] mb-[2rem] text-[1.05rem] font-medium text-black dark:text-lightAccent sm:text-[1.2rem] md:mt-[2rem] md:mb-[3rem] md:ml-[2rem]'>
               {obj.about}
             </p>
 
@@ -84,6 +84,7 @@ const Slider = () => {
                   href={obj.git}
                   target='_blank'
                   rel='noreferrer'
+                  title='Github Code'
                 >
                   <GitHub />
                   <p className='ml-[.75rem] inline text-[.85rem] font-semibold tracking-[.1rem]'>
@@ -97,6 +98,7 @@ const Slider = () => {
                   href={obj.url}
                   target='_blank'
                   rel='noreferrer'
+                  title='Live Project'
                 >
                   <Visit />
                   <p className='ml-[.75rem] inline text-[.85rem] font-semibold tracking-[.1rem]'>

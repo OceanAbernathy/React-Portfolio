@@ -24,25 +24,28 @@ const Footer = () => {
           <ul className='flex flex-col items-start gap-[1.3rem] sm:flex-row sm:items-end sm:gap-[4.5rem]'>
             <li>
               <a
+                className='footerLink relative w-max text-[1rem] hover:text-white md:text-[1.25rem]'
                 href='http://oceanabernathy.com/Ocean_Abernathy_Resume.pdf'
                 target='_blank'
-                className='footerLink relative w-max text-[1rem] hover:text-white md:text-[1.25rem] '
+                title='Resume'
               >
                 Resume
               </a>
             </li>
             <li>
               <a
+                className='footerLink relative w-max text-[1rem] hover:text-white md:text-[1.25rem]'
                 href='#portfolio'
-                className='footerLink relative w-max text-[1rem] hover:text-white md:text-[1.25rem] '
+                title='Portfolio'
               >
                 Portfolio
               </a>
             </li>
             <li>
               <a
+                className='footerLink relative w-max whitespace-nowrap text-[1rem] hover:text-white md:text-[1.25rem]'
                 href='#contact'
-                className='footerLink relative w-max whitespace-nowrap text-[1rem] hover:text-white md:text-[1.25rem] '
+                title='Contact Me'
               >
                 Contact Me
               </a>

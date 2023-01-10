@@ -8,6 +8,7 @@ const Social = () => (
       className='block h-[28px] w-[28px] sm:h-[35px] sm:w-[35px]'
       href='https://www.linkedin.com/in/ocean-abernathy/'
       target='_blank'
+      title='LinkedIn'
     >
       <LinkedIn />
     </a>
@@ -15,6 +16,7 @@ const Social = () => (
       className='block h-[28px] w-[28px] sm:h-[35px] sm:w-[35px]'
       href='https://github.com/OceanAbernathy'
       target='_blank'
+      title='Github'
     >
       <GitHub />
     </a>
@@ -22,6 +24,7 @@ const Social = () => (
       className='block h-[28px] w-[28px] sm:h-[35px] sm:w-[35px]'
       href='#contact'
       target='_self'
+      title='Contact Me'
     >
       <Message />
     </a>
