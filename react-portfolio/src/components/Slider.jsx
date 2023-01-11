@@ -67,7 +67,7 @@ const Slider = () => {
 
           {/* ----- Slide Text ----- */}
 
-          <div className='self-center'>
+          <div className='mt-[2rem] self-center sm:mt-0'>
             <h3 className='relative col-span-2 row-span-1 mb-[2rem] ml-[1rem] w-max text-[1.25rem] font-semibold text-black underline decoration-[.2rem] underline-offset-8 dark:text-black sm:text-[1.5rem] md:ml-[2rem]'>
               {obj.title}
             </h3>

@@ -21,24 +21,24 @@ const App = () => {
 
       <div
         id='home'
-        className={`${styles.flexCenter} pt-[3rem] lg:pt-[5rem] ${styles.section} mb-[5rem] xxs:px-[2rem] ss:px-[4rem] sm:px-[4rem] lg:px-[5rem]`}
+        className={`${styles.flexCenter} pt-[3rem] lg:pt-[5rem] ${styles.section} mb-[8rem] xxs:px-[2rem] ss:px-[4rem] sm:px-[4rem] md:mb-[7rem] lg:px-[5rem]`}
       >
         <Hero />
       </div>
 
       <div
-        className={`wavyContainer relative z-[1] h-full w-full pt-[8rem] duration-[.6s] sm:pt-[5rem]`}
+        className={`wavyContainer relative z-[1] mt-[5rem] h-full w-full duration-[.6s]`}
       >
         <div
           id='portfolio'
-          className={`${styles.flexStart} ${styles.boxWidth} mx-auto w-[80%] pb-[3rem] pt-[8rem] lg:w-[65%]`}
+          className={`${styles.flexStart} ${styles.boxWidth} mx-auto w-[80%] pb-[3rem] lg:w-[65%]`}
         >
           <Portfolio />
         </div>
 
         <div
           id='contact'
-          className={`${styles.flexStart} pt-[8rem] ss:pt-[10rem] ${styles.section}`}
+          className={`${styles.flexStart} ${styles.section} mt-[5rem]`}
         >
           <Contact />
         </div>
