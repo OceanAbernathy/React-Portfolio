@@ -13,9 +13,9 @@ const styles = {
   sectionMargin: 'mt-[5rem]',
 
   buttonHero:
-    'inline-flex text-[1.25rem] bg-secondary w-max mr-auto ss:mx-auto my-[3rem] p-[1rem] rounded-lg items-center text-white font-medium hover:bg-primaryDark',
+    'inline text-[1.25rem] bg-secondary w-max ss:mx-auto my-[3rem] p-[1rem] rounded-lg items-center text-white font-medium hover:bg-primaryDark',
   buttonContact:
-    'cursor-pointer inline-flex text-[1.25rem] bg-secondary w-max mr-auto lg:mx-auto my-[3rem] p-[1rem] rounded-lg items-center text-white font-medium hover:bg-primaryDark',
+    'inline text-[1.25rem] bg-secondary w-max p-4 rounded-lg items-center text-white font-medium hover:bg-primaryDark',
 
   dot: 'm-[5px] inline-block h-[15px] w-[15px] rounded-[50%] border-2 border-solid border-gray-500 cursor-pointer',
 };
