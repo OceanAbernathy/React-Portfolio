@@ -14,7 +14,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className='z-[-1] w-full overflow-hidden bg-backgroundLight bg-hero-pattern dark:bg-backgroundDark dark:bg-hero-pattern-inverted'>
+    <div className='w-full overflow-hidden bg-backgroundLight bg-hero-pattern dark:bg-backgroundDark dark:bg-hero-pattern-inverted'>
       <Splash />
 
       <Navbar />

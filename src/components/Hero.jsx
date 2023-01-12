@@ -56,13 +56,18 @@ const Hero = () => {
         {/* ----- Hero Contact Button ----- */}
 
         <a
-          className={`${styles.buttonHero} group z-[2]`}
+          className={`${styles.buttonHero} group z-[1]`}
           href='#contact'
           title='Contact Me'
         >
           Contact Me{' '}
           <Unicons.UilMessage className='ml-[.55rem] inline h-[20px] w-[20px] duration-300 group-hover:translate-x-1' />
         </a>
+
+        {/* TEMP BUTTON FIX */}
+        <button className='z-[-100] w-max select-none bg-primary p-4'>
+          hello
+        </button>
       </div>
 
       {/* ----- Hero Scroll Down Button ----- */}
