@@ -17,9 +17,11 @@ const Contact = () => {
       )
       .then(
         (result) => {
+          alert('Message Sent!');
           console.log(result.text);
         },
         (error) => {
+          alert('Send Error!');
           console.log(error.text);
         }
       );
@@ -92,6 +94,7 @@ const Contact = () => {
               <input
                 type='text'
                 name='name'
+                required
                 className='w-full resize-none bg-lightAccent pt-[.25rem] pr-[.5rem] pb-[.5rem] text-[1.25rem] text-darkAccent outline-none'
               />
             </div>
@@ -100,6 +103,7 @@ const Contact = () => {
               <input
                 type='email'
                 name='email'
+                required
                 className='w-full resize-none bg-lightAccent pt-[.25rem] pr-[.5rem] pb-[.5rem] text-[1.25rem] text-darkAccent outline-none'
               />
             </div>
@@ -110,6 +114,7 @@ const Contact = () => {
               name='message'
               cols='0'
               rows='7'
+              required
               className='w-full resize-none bg-lightAccent pt-[.25rem] pr-[.5rem] pb-[.5rem] text-[1.25rem] text-darkAccent outline-none'
             ></textarea>
           </div>
