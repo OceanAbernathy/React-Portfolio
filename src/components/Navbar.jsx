@@ -44,7 +44,7 @@ const Navbar = () => {
         scroll ? 'shadow-nav dark:shadow-navDark' : 'shadow-none'
       } ${
         styles.flexCenter
-      } fixed bottom-0 z-[2] w-full select-none bg-backgroundLightNav px-6 dark:bg-backgroundDarkNav sm:top-0 sm:bottom-auto md:px-[6rem] lg:px-[10rem] xl:px-[20rem]`}
+      } fixed bottom-0 z-[3] w-full select-none bg-backgroundLightNav px-6 dark:bg-backgroundDarkNav sm:top-0 sm:bottom-auto md:px-[6rem] lg:px-[10rem] xl:px-[20rem]`}
     >
       <nav
         className={`${styles.boxWidth} my-0 mx-auto flex w-[100%] justify-end py-4 sm:px-[3rem] sm:py-3`}

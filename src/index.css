@@ -34,7 +34,7 @@
 }
 
 .splash {
-  z-index: 3;
+  z-index: 4;
   animation: splash 1.5s ease 5s forwards, fadeOut 1s ease forwards 6.2s;
 }
 
