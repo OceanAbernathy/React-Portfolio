@@ -23,13 +23,13 @@
 }
 
 #logo path:nth-child(1) {
-  stroke-dasharray: 1641.4661865234375;
-  stroke-dashoffset: 1641.4661865234375;
+  stroke-dasharray: 1645.13232421875;
+  stroke-dashoffset: 1645.13232421875;
   animation: line-anim 3.5s ease-in forwards 1s;
 }
 #logo path:nth-child(2) {
-  stroke-dasharray: 1069.3909912109375;
-  stroke-dashoffset: 1069.3909912109375;
+  stroke-dasharray: 1064.281005859375;
+  stroke-dashoffset: 1064.281005859375;
   animation: line-anim 3.5s ease forwards 1.95s;
 }
 
