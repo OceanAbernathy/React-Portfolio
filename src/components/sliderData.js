@@ -30,7 +30,7 @@ const sliderData = [
     id: uuidv4(),
     title: 'Simple Weather App',
     about:
-      "Weather App pulling fromm multiple api's, utilizing hooks and state.",
+      "Weather App pulling from multiple API's, utilizing hooks and state.",
     git: 'https://github.com/OceanAbernathy/simple-weather-app',
     url: 'http://oceanabernathy.com/SimpleWeatherApp/',
     img: img3,
