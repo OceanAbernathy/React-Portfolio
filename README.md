@@ -1,5 +1,5 @@
 <div align='center'>
-  <img src='/react-portfolio/src/assets/Icons/logo.svg' width='300'/>
+  <img src='https://github.com/OceanAbernathy/React-Portfolio/blob/main/src/assets/Icons/logo.svg' width='300'/>
 </div>
 
 # OCEAN ABERNATHY<br>Dedicated Front-End Developer
