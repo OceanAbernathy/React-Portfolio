@@ -10,20 +10,20 @@ import img6 from '../assets/SliderImg/img6.jpg';
 const sliderData = [
   {
     id: uuidv4(),
-    title: 'Modern Banking',
+    title: 'Reddit Clone',
     about:
-      'Banking app information and pricing page created in React with Vite, using Tailwind CSS.',
-    git: 'https://github.com/OceanAbernathy/BankApp',
-    url: 'http://oceanabernathy.com/BankApp/',
+      'Reddit Clone made from tutorial using React, TypeScript, Next.js, and Chakra UI.',
+    git: 'https://github.com/OceanAbernathy/reddit-clone',
+    url: 'https://reddit-clone-eight-inky.vercel.app/',
     img: img1,
   },
   {
     id: uuidv4(),
-    title: 'Sign Up/Login Form',
+    title: 'IMDb Clone',
     about:
-      'Basic sign up and login form with password authentication and optional reset.',
-    git: 'https://github.com/OceanAbernathy/auth-form',
-    url: 'http://oceanabernathy.com/SignUpLoginForm/',
+      'IMDb Clone made from tutorial using React, Next.js, and Tailwind CSS.',
+    git: 'https://github.com/OceanAbernathy/imdb-clone',
+    url: 'https://imdb-clone-tawny.vercel.app/',
     img: img2,
   },
   {
@@ -37,11 +37,21 @@ const sliderData = [
   },
   {
     id: uuidv4(),
-    title: 'React Calculator',
-    about: 'Simplistic implementation of a mobile calculator built in React.',
-    git: 'https://github.com/OceanAbernathy/calculator',
-    url: 'http://oceanabernathy.com/Calculator/',
+    title: 'FamPicks',
+    about:
+      'Competitive college football app that tracks weekly teams, game times, and records the score in real time.',
+    git: 'https://github.com/brandiquintos/fampicks',
+    url: 'http://oceanabernathy.com/fampicks/',
     img: img4,
+  },
+  {
+    id: uuidv4(),
+    title: 'Modern Banking',
+    about:
+      'Banking app information and pricing page created in React with Vite, using Tailwind CSS.',
+    git: 'https://github.com/OceanAbernathy/BankApp',
+    url: 'http://oceanabernathy.com/BankApp/',
+    img: img5,
   },
   {
     id: uuidv4(),
@@ -50,15 +60,6 @@ const sliderData = [
       'Sample page created from a mockup, converted to be both desktop and mobile friendly.',
     git: 'https://github.com/OceanAbernathy/cybersafe',
     url: 'http://oceanabernathy.com/Cyber/',
-    img: img5,
-  },
-  {
-    id: uuidv4(),
-    title: 'FamPicks',
-    about:
-      'Competitive college football app that tracks weekly teams, game times, and records the score in real time.',
-    git: 'https://github.com/brandiquintos/fampicks',
-    url: 'http://oceanabernathy.com/fampicks/',
     img: img6,
   },
 ];

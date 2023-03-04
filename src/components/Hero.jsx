@@ -67,7 +67,7 @@ const Hero = () => {
 
       {/* ----- Hero Scroll Down Button ----- */}
 
-      <div className='absolute right-[3rem] bottom-[3rem] z-[1] duration-[.2s] hover:translate-y-1 xl:right-[5rem] xl:bottom-[5rem]'>
+      <div className='absolute right-[3rem] bottom-[3rem] z-[2] duration-[.2s] hover:translate-y-1 xl:right-[5rem] xl:bottom-[5rem]'>
         <a
           className='ml-auto hidden w-fit animate-bounceDown items-center lg:flex'
           href='#portfolio'
