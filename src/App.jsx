@@ -13,12 +13,6 @@ const App = () => {
     });
   }, []);
 
-  const logo = document.querySelectorAll('#logo path');
-
-  for (let i = 0; i < logo.length; i++) {
-    console.log(`Letter ${i} is ${logo[i].getTotalLength()}`);
-  }
-
   return (
     <div className='w-full overflow-hidden bg-backgroundLight bg-hero-pattern dark:bg-backgroundDark dark:bg-hero-pattern-inverted'>
       <Splash />
