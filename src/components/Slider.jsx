@@ -46,7 +46,7 @@ const Slider = () => {
           <div className='relative m-[1rem] self-center rounded-2xl shadow-2xl sm:m-[2rem]'>
             {/* ----- Slide Image ----- */}
 
-            <img className='rounded-2xl' src={obj.img} alt='' />
+            <img className='rounded-2xl ' src={obj.img} alt='' />
 
             {/* ----- Slide dots ----- */}
 

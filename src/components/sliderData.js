@@ -1,13 +1,22 @@
 import { v4 as uuidv4 } from 'uuid';
 
-import img1 from '../assets/SliderImg/img1.jpg';
-import img2 from '../assets/SliderImg/img2.jpg';
-import img3 from '../assets/SliderImg/img3.jpg';
-import img4 from '../assets/SliderImg/img4.jpg';
-import img5 from '../assets/SliderImg/img5.jpg';
-import img6 from '../assets/SliderImg/img6.jpg';
+import SEUS from '../assets/SliderImg/SEUS.jpg';
+import RedditClone from '../assets/SliderImg/RedditClone.jpg';
+import IMDbClone from '../assets/SliderImg/IMDbClone.jpg';
+import SimpleWeather from '../assets/SliderImg/SimpleWeather.jpg';
+import FamPicks from '../assets/SliderImg/FamPicks.jpg';
+import Cybersafe from '../assets/SliderImg/Cybersafe.jpg';
 
 const sliderData = [
+  {
+    id: uuidv4(),
+    title: 'SEUS Mobile Web App',
+    about:
+      'SEUS mockup mobile web app created using React, Chakra UI and Firebase.',
+    git: 'https://github.com/OceanAbernathy/seus',
+    url: 'http://oceanabernathy.com/SEUS/',
+    img: SEUS,
+  },
   {
     id: uuidv4(),
     title: 'Reddit Clone',
@@ -15,7 +24,7 @@ const sliderData = [
       'Reddit Clone made from tutorial using React, TypeScript, Next.js, and Chakra UI.',
     git: 'https://github.com/OceanAbernathy/reddit-clone',
     url: 'https://reddit-clone-eight-inky.vercel.app/',
-    img: img1,
+    img: RedditClone,
   },
   {
     id: uuidv4(),
@@ -24,7 +33,7 @@ const sliderData = [
       'IMDb Clone made from tutorial using React, Next.js, and Tailwind CSS.',
     git: 'https://github.com/OceanAbernathy/imdb-clone',
     url: 'https://imdb-clone-tawny.vercel.app/',
-    img: img2,
+    img: IMDbClone,
   },
   {
     id: uuidv4(),
@@ -33,7 +42,7 @@ const sliderData = [
       "Weather App pulling from multiple API's, utilizing hooks and state.",
     git: 'https://github.com/OceanAbernathy/simple-weather-app',
     url: 'http://oceanabernathy.com/SimpleWeatherApp/',
-    img: img3,
+    img: SimpleWeather,
   },
   {
     id: uuidv4(),
@@ -42,16 +51,7 @@ const sliderData = [
       'Competitive college football app that tracks weekly teams, game times, and records the score in real time.',
     git: 'https://github.com/brandiquintos/fampicks',
     url: 'http://oceanabernathy.com/fampicks/',
-    img: img4,
-  },
-  {
-    id: uuidv4(),
-    title: 'Modern Banking',
-    about:
-      'Banking app information and pricing page created in React with Vite, using Tailwind CSS.',
-    git: 'https://github.com/OceanAbernathy/BankApp',
-    url: 'http://oceanabernathy.com/BankApp/',
-    img: img5,
+    img: FamPicks,
   },
   {
     id: uuidv4(),
@@ -60,7 +60,7 @@ const sliderData = [
       'Sample page created from a mockup, converted to be both desktop and mobile friendly.',
     git: 'https://github.com/OceanAbernathy/cybersafe',
     url: 'http://oceanabernathy.com/Cyber/',
-    img: img6,
+    img: Cybersafe,
   },
 ];
 
