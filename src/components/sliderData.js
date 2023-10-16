@@ -14,7 +14,7 @@ const sliderData = [
     about:
       'SEUS mockup mobile web app created using React, Chakra UI and Firebase.',
     git: 'https://github.com/OceanAbernathy/seus',
-    url: 'http://oceanabernathy.com/SEUS/',
+    url: 'https://oceanabernathy.com/SEUS/',
     img: SEUS,
   },
   {
@@ -41,7 +41,7 @@ const sliderData = [
     about:
       "Weather App pulling from multiple API's, utilizing hooks and state.",
     git: 'https://github.com/OceanAbernathy/simple-weather-app',
-    url: 'http://oceanabernathy.com/SimpleWeatherApp/',
+    url: 'http://oceanabernathy/SimpleWeatherApp/',
     img: SimpleWeather,
   },
   {
@@ -50,7 +50,7 @@ const sliderData = [
     about:
       'Competitive college football app that tracks weekly teams, game times, and records the score in real time.',
     git: 'https://github.com/brandiquintos/fampicks',
-    url: 'http://oceanabernathy.com/fampicks/',
+    url: 'https://oceanabernathy.com/fampicks/',
     img: FamPicks,
   },
   {
@@ -59,7 +59,7 @@ const sliderData = [
     about:
       'Sample page created from a mockup, converted to be both desktop and mobile friendly.',
     git: 'https://github.com/OceanAbernathy/cybersafe',
-    url: 'http://oceanabernathy.com/Cyber/',
+    url: 'https://oceanabernathy.com/Cyber/',
     img: Cybersafe,
   },
 ];

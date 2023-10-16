@@ -25,7 +25,7 @@ const Footer = () => {
             <li>
               <a
                 className='footerLink relative w-max text-[1rem] hover:text-white md:text-[1.25rem]'
-                href='http://oceanabernathy.com/Ocean_Abernathy_Resume.pdf'
+                href='https://oceanabernathy.com/Ocean_Abernathy_Resume.pdf'
                 target='_blank'
                 title='Resume'
               >

@@ -14,7 +14,7 @@ export const navLinks = [
     icon: Scenery,
   },
   {
-    id: 'http://oceanabernathy.com/Ocean_Abernathy_Resume.pdf',
+    id: 'https://oceanabernathy.com/Ocean_Abernathy_Resume.pdf',
     target: '_blank',
     title: 'Resume',
     icon: FileDownload,
