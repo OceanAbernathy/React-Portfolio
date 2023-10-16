@@ -41,7 +41,7 @@ const sliderData = [
     about:
       "Weather App pulling from multiple API's, utilizing hooks and state.",
     git: 'https://github.com/OceanAbernathy/simple-weather-app',
-    url: 'http://oceanabernathy/SimpleWeatherApp/',
+    url: 'https://oceanabernathy.com/SimpleWeatherApp/',
     img: SimpleWeather,
   },
   {
